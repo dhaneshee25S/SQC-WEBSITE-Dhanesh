@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #050d14;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 30px 10px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #00d4ff;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Hero */
+.hero img {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 40px 20px;
+}
+
+.gallery h3 {
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-grid img {
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Button */
+.btn-container {
+    margin: 40px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #00d4ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00aacc;
+}
+/* 🌟 Page fade-in animation */
+body {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🚀 Header slide animation */
+header h1, header h2 {
+    animation: slideDown 1.2s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔮 Floating animation for images */
+.image-grid img {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* ✨ Glow pulse effect */
+button {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #00d4ff;
+    }
+    to {
+        box-shadow: 0 0 25px #00d4ff;
+    }
+}
+
+/* 🎯 Smooth hover zoom */
+.image-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* 🌊 Smooth transition */
+.image-grid img,
+button {
+    transition: all 0.4s ease;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
